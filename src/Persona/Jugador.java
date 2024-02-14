@@ -11,15 +11,15 @@ public class Jugador implements Serializable {
     private int dorsal;
     private int goles;
     private int asistencia;
-    private int parada;
+    private int paradas;
 
     public Jugador(String nombre, String posicion, int dorsal, int goles, int asistencia, int parada) {
         this.nombre = nombre;
         this.posicion = posicion;
         this.dorsal = dorsal;
-        this.goles = goles;
-        this.asistencia = asistencia;
-        this.parada = parada;
+        this.goles = 0;
+        this.asistencia = 0;
+        this.paradas = 0;
 
     }
 
@@ -65,10 +65,16 @@ public class Jugador implements Serializable {
     }
 
     public int getParada() {
-        return parada;
+        return paradas;
     }
 
     public void setParada(int parada) {
-        this.parada = parada;
+        this.paradas = parada;
+    }
+
+    public void actualizarEstadísticas (int golesmarcados , int asistenciaRealizada , int  paradasRealizadas ){
+        this.goles += golesmarcados;
+        this.asistencia += asistenciaRealizada;
+        this.paradas += paradasRealizadas;
     }
 }
