@@ -1,13 +1,18 @@
 package Partido;
 
 import java.util.Date;
+import java.util.List;
+
 import Equipo.equipo;
+import EquiposRandom.GeneradorEquipos;
+import Persona.Jugador;
+
 
 public class Partidos {
     private Date Fecha;
     private equipo equipoLocal;
     private equipo equipoVisiitante;
-    private  String resultado;
+    private String resultado;
 
     public Partidos(Date fecha, equipo equipoLocal, equipo equipoVisiitante, String resultado) {
         Fecha = fecha;
@@ -15,8 +20,11 @@ public class Partidos {
         this.equipoVisiitante = equipoVisiitante;
         this.resultado = "";
     }
-    public void jugarPartidos (int golesLocal , int golesVisitante){
-    this.resultado= golesLocal + "-"+ golesVisitante;
+
+    public void jugarPartidos(int golesLocal, int golesVisitante) {
+        this.resultado = golesLocal + "-" + golesVisitante;
+        equipoLocal.actualizarEstadísticas(golesLocal, golesVisitante, true);
+        equipoVisiitante.actualizarEstadísticas(golesVisitante, golesLocal, false);
     }
 
     public equipo getEquipoLocal() {

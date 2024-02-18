@@ -1,6 +1,7 @@
 package Persona;
 
 import java.io.Serializable;
+import java.util.Random;
 
 public class Jugador implements Serializable {
 
@@ -13,10 +14,11 @@ public class Jugador implements Serializable {
     private int asistencia;
     private int paradas;
 
-    public Jugador(String nombre, String posicion, int dorsal, int goles, int asistencia, int parada) {
+    public Jugador(String nombre, String posicion, String s, int dorsal, int goles, int asistencia , int paradas) {
         this.nombre = nombre;
-        this.posicion = posicion;
-        this.dorsal = dorsal;
+        this.posicion = s;
+        Random random = new Random();
+        this.dorsal =  random.nextInt(99) + 1;;
         this.goles = 0;
         this.asistencia = 0;
         this.paradas = 0;
