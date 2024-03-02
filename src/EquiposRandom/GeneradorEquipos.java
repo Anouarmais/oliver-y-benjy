@@ -1,6 +1,5 @@
 package EquiposRandom;
 
-import Equipo.equipo;
 import Persona.Jugador;
 
 import java.io.BufferedReader;
@@ -12,53 +11,61 @@ import java.util.List;
 import java.util.Random;
 
 public class GeneradorEquipos {
+
     public static List<Jugador> generandoEquipoMuppetFC(String hacerequipoMuppetFC) {
 
-
-        List<Jugador> jugadoresMuppetFC = new ArrayList<>();
+        List<Jugador> MuppetFC = new ArrayList<>();
         List<String> nombres = obtenerNombresAleatorios("C:\\Users\\anouar\\Desktop\\oliver-y-benjy\\Jugadores.txt");
         List<String> nombresMuppetFC = seleccionarNombreAleatorios(nombres);
 
-
         for (String nombre : nombresMuppetFC) {
-            jugadoresMuppetFC.add(crearJugador(nombre, "Muppet FC"));
+            MuppetFC.add(crearJugador(nombre, "Muppet FC"));
         }
 
-
-        return jugadoresMuppetFC;
+        return MuppetFC;
 
     }
 
     public static List<Jugador> generandoEquipoNewTeam(String hacerequipoNewTeam) {
 
-        List<Jugador> jugadoresNewTeam = new ArrayList<>();
-
+        List<Jugador> NewTeam = new ArrayList<>();
 
         List<String> nombres = obtenerNombresAleatorios("C:\\Users\\anouar\\Desktop\\oliver-y-benjy\\Jugadores.txt");
         List<String> nombresNewTeam = seleccionarNombreAleatorios(nombres);
 
-
         for (String nombre : nombresNewTeam) {
-            jugadoresNewTeam.add(crearJugador(nombre, "New Team FC"));
-
+            NewTeam.add(crearJugador(nombre, "New Team FC"));
         }
 
-
-        return jugadoresNewTeam;
+        return NewTeam;
 
     }
 
-
-
-    private static Jugador crearJugador(String nombre, String equipo  ) {
+    private static Jugador crearJugador(String nombre, String equipo) {
         Random random = new Random();
         int goles = 0;
         int asistencias = 0;
         int paradas = 0;
-        String[] posiciones = {"Delantero", "Centrocampista", "Defensa", "Portero"};
-        String posicion = posiciones[random.nextInt(posiciones.length)];
+        String posicion;
+        int numeroAleatorio = random.nextInt(4);
+
+        switch (numeroAleatorio) {
+            case 0:
+                posicion = "Delantero";
+                break;
+            case 1:
+                posicion = "Centrocampista";
+                break;
+            case 2:
+                posicion = "Defensa";
+                break;
+            default:
+                posicion = "Portero";
+                break;
+        }
+
         int dorsal = random.nextInt(99) + 1;
-        return new Jugador(nombre, equipo, posicion, goles, asistencias, paradas, dorsal);
+        return new Jugador(nombre, posicion, goles, asistencias, paradas, dorsal);
     }
 
     private static List<String> seleccionarNombreAleatorios(List<String> nombres) {
@@ -81,4 +88,5 @@ public class GeneradorEquipos {
         }
         return nombres;
     }
+
 }

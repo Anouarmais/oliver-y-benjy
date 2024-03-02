@@ -6,7 +6,7 @@ import Persona.Jugador;
 import java.util.ArrayList;
 import java.util.List;
 
-public class equipo {
+public class Equipo {
     public String nombreEquipo ;
     public List<Jugador> Jugadores;
 
@@ -16,11 +16,10 @@ public class equipo {
     public int partidosempatados ;
     public int golesEncontra;
 
-    public equipo(String nombreEquipo, List<Jugador> jugadores, int partidosGanados, int golesAfavor, int partidosPerdidos, int partidosempatados) {
+    public Equipo(String nombreEquipo, List<String> jugadores, int partidosGanados, int partidosPerdidos, int partidosempatados) {
         this.nombreEquipo = nombreEquipo;
         Jugadores = new ArrayList<>();
         this.partidosGanados = 0;
-        this.golesAfavor = 0;
         this.partidosPerdidos = 0;
         this.partidosempatados = 0;
 

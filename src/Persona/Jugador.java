@@ -1,7 +1,6 @@
 package Persona;
 
 import java.io.Serializable;
-import java.util.Random;
 
 public class Jugador implements Serializable {
 
@@ -11,20 +10,18 @@ public class Jugador implements Serializable {
 
     private int dorsal;
     private int goles;
-    private int asistencia;
+    private int asistencias;
     private int paradas;
 
-    public Jugador(String nombre, String posicion, String s, int dorsal, int goles, int asistencia , int paradas) {
+    public Jugador(String nombre, String posicion, int goles, int asistencias, int paradas, int dorsal) {
         this.nombre = nombre;
-        this.posicion = s;
-        Random random = new Random();
-        this.dorsal =  random.nextInt(99) + 1;;
-        this.goles = 0;
-        this.asistencia = 0;
-        this.paradas = 0;
 
+        this.posicion = posicion;
+        this.goles = goles;
+        this.asistencias = asistencias;
+        this.paradas = paradas;
+        this.dorsal = dorsal;
     }
-
     public String getNombre() {
         return nombre;
     }
@@ -57,26 +54,26 @@ public class Jugador implements Serializable {
         this.goles = goles;
     }
 
-    public int getAsistencia() {
-        return asistencia;
+    public int getAsistencia(int asistencias) {
+        return asistencias;
     }
 
 
     public void setAsistencia(int asistencia) {
-        this.asistencia = asistencia;
+        this.asistencias = asistencia;
     }
 
-    public int getParada() {
+    public int getParadas() {
         return paradas;
     }
 
-    public void setParada(int parada) {
+    public void setParadas(int parada) {
         this.paradas = parada;
     }
 
     public void actualizarEstadísticas (int golesmarcados , int asistenciaRealizada , int  paradasRealizadas ){
         this.goles += golesmarcados;
-        this.asistencia += asistenciaRealizada;
+        this.asistencias += asistenciaRealizada;
         this.paradas += paradasRealizadas;
     }
 }
