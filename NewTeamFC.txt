@@ -1,0 +1,13 @@
+New Team FC:partidos Ganados0partidos Perdidos0Empatados0
+
+Lucas Newton-Goles0,Dorsal: 37, Posición :Defensa, Asistencias: 0, Paradas: 0
+Corn-Goles0,Dorsal: 85, Posición :Centrocampista, Asistencias: 0, Paradas: 0
+Timoty "Tim" Vance-Goles0,Dorsal: 21, Posición :Portero, Asistencias: 0, Paradas: 0
+Boldwin-Goles0,Dorsal: 46, Posición :Delantero, Asistencias: 0, Paradas: 0
+Ted Carter-Goles0,Dorsal: 13, Posición :Centrocampista, Asistencias: 0, Paradas: 0
+Hobbes-Goles0,Dorsal: 92, Posición :Centrocampista, Asistencias: 0, Paradas: 0
+Becker-Goles0,Dorsal: 10, Posición :Defensa, Asistencias: 0, Paradas: 0
+Timber-Goles0,Dorsal: 73, Posición :Defensa, Asistencias: 0, Paradas: 0
+Nick Star-Goles0,Dorsal: 46, Posición :Defensa, Asistencias: 0, Paradas: 0
+Cole-Goles0,Dorsal: 7, Posición :Delantero, Asistencias: 0, Paradas: 0
+Nicolas Milton-Goles0,Dorsal: 22, Posición :Defensa, Asistencias: 0, Paradas: 0

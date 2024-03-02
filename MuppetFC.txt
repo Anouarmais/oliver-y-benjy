@@ -1,0 +1,13 @@
+Muppet FC:partidos Ganados0partidos Perdidos0Empatados0
+
+Steve O'Neil-Goles0,Dorsal: 56, Posición :Centrocampista, Asistencias: 0, Paradas: 0
+Conrad Hayle-Goles0,Dorsal: 33, Posición :Defensa, Asistencias: 0, Paradas: 0
+Andy Ship-Goles0,Dorsal: 30, Posición :Defensa, Asistencias: 0, Paradas: 0
+Victor Sail-Goles0,Dorsal: 92, Posición :Defensa, Asistencias: 0, Paradas: 0
+Lucas Newton-Goles0,Dorsal: 41, Posición :Portero, Asistencias: 0, Paradas: 0
+Jack Morris-Goles0,Dorsal: 86, Posición :Delantero, Asistencias: 0, Paradas: 0
+Thomas Room-Goles0,Dorsal: 90, Posición :Delantero, Asistencias: 0, Paradas: 0
+Max Eagles-Goles0,Dorsal: 24, Posición :Delantero, Asistencias: 0, Paradas: 0
+Jack Gambill-Goles0,Dorsal: 80, Posición :Defensa, Asistencias: 0, Paradas: 0
+Philip Callahan-Goles0,Dorsal: 43, Posición :Centrocampista, Asistencias: 0, Paradas: 0
+Marvin Spencer-Goles0,Dorsal: 86, Posición :Delantero, Asistencias: 0, Paradas: 0
